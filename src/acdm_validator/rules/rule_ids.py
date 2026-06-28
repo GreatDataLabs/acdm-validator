@@ -1,0 +1,12 @@
+"""Stable rule identifiers."""
+
+R1_TRUST = "R1"
+R2_FRESHNESS = "R2"
+R3_PROVENANCE = "R3"
+R4_COST = "R4"
+R5_RISK = "R5"
+R6_PERMISSION = "R6"
+R7_EXPIRED = "R7"
+R8_MASKING = "R8"
+R9_CERTIFICATION = "R9"
+R10_CONFLICT = "R10"

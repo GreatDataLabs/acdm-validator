@@ -1,0 +1,16 @@
+entity_name: customer_risk_view
+business_definition: "An intentionally invalid derived risk view used as a validation example."
+primary_keys: [member_id]
+depends_on: [member_profile, vendor_fraud_score]
+trust_tier: T1
+freshness_policy: {max_age: "48h"}
+provenance_binding: [member_db]
+cost_class: C1
+risk_class: R1
+allowed_agent_actions: [read, summarize, recommend, decide]
+human_approval_required: false
+downstream_exposure_rules: {mask: []}
+owner: data-risk-team
+review_frequency: "30d"
+certified_upgrade: null
+

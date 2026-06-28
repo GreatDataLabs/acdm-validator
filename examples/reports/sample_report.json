@@ -1,0 +1,45 @@
+{
+  "data_product_maturity": 3,
+  "entities_checked": 3,
+  "entity_maturity": {
+    "customer_risk_view": 3,
+    "member_profile": 3,
+    "vendor_fraud_score": 3
+  },
+  "findings": [],
+  "generated_at": "2026-06-28T12:00:00+00:00",
+  "resolved_properties": {
+    "customer_risk_view": {
+      "cost": {"class": "C2", "rank": 2},
+      "depends_on": ["member_profile", "vendor_fraud_score"],
+      "freshness_policy": {"expired": false, "max_age": "12h", "max_age_seconds": 43200},
+      "mask": ["dob", "ssn"],
+      "permission_ceiling": "recommend",
+      "provenance_binding": ["member_db", "vendor_fraud_api"],
+      "risk_class": "R3",
+      "trust_tier": "T3"
+    },
+    "member_profile": {
+      "cost": {"class": "C1", "rank": 1},
+      "depends_on": [],
+      "freshness_policy": {"expired": false, "max_age": "24h", "max_age_seconds": 86400},
+      "mask": ["dob", "ssn"],
+      "permission_ceiling": "recommend",
+      "provenance_binding": ["member_db"],
+      "risk_class": "R2",
+      "trust_tier": "T1"
+    },
+    "vendor_fraud_score": {
+      "cost": {"class": "C1", "rank": 1},
+      "depends_on": [],
+      "freshness_policy": {"expired": false, "max_age": "12h", "max_age_seconds": 43200},
+      "mask": [],
+      "permission_ceiling": "recommend",
+      "provenance_binding": ["vendor_fraud_api"],
+      "risk_class": "R3",
+      "trust_tier": "T3"
+    }
+  },
+  "status": "passed"
+}
+

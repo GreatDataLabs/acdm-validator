@@ -1,0 +1,15 @@
+entity_name: vendor_fraud_score
+business_definition: "A third-party fraud signal used as recommendation evidence."
+primary_keys: [member_id]
+trust_tier: T3
+freshness_policy: {max_age: "12h"}
+provenance_binding: [vendor_fraud_api]
+cost_class: C1
+risk_class: R3
+allowed_agent_actions: [read, summarize, recommend]
+human_approval_required: true
+downstream_exposure_rules: {mask: []}
+owner: data-risk-team
+review_frequency: "30d"
+certified_upgrade: null
+

@@ -1,0 +1,34 @@
+{
+  "data_product_maturity": 3,
+  "dependency_composition": {
+    "customer_risk_view": {
+      "resolved": {
+        "depends_on": ["member_profile", "vendor_fraud_score"],
+        "trust_tier": "T3",
+        "risk_class": "R3",
+        "permission_ceiling": "recommend",
+        "provenance_binding": ["member_db", "vendor_fraud_api"],
+        "mask": ["dob", "ssn"]
+      }
+    }
+  },
+  "entity_maturity": {
+    "customer_risk_view": 3,
+    "member_profile": 3,
+    "vendor_fraud_score": 3
+  },
+  "findings": [],
+  "resolved_entities": {
+    "customer_risk_view": {
+      "depends_on": ["member_profile", "vendor_fraud_score"],
+      "trust_tier": "T3",
+      "risk_class": "R3",
+      "permission_ceiling": "recommend",
+      "provenance_binding": ["member_db", "vendor_fraud_api"],
+      "mask": ["dob", "ssn"]
+    }
+  },
+  "status": "passed",
+  "validation_timestamp": "2026-06-28T12:00:00+00:00",
+  "validator": {"name": "acdm-validator", "version": "0.1.0"}
+}
