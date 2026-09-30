@@ -5,6 +5,12 @@
 > Make ACDM enforceable by validating entity contracts, composition rules, permission ceilings, and
 > maturity levels in CI.
 
+## ACDM resources
+
+- **ACDM overview:** <https://greatdatalabs.github.io/acdm/>
+- **White paper PDF:** <https://greatdatalabs.github.io/assets/acdm/acdm-white-paper-final.pdf>
+- **GreatDataLabs organization:** <https://github.com/GreatDataLabs>
+
 ACDM Validator makes Agent Contract Data Modeling enforceable. It reads Entity Contracts, checks
 them against ACDM composition rules and the permission model, assigns maturity levels, and emits
 audit records that can be used in CI/CD governance workflows.
