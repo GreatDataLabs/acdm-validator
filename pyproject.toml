@@ -29,8 +29,10 @@ dev = ["build>=1.2", "pytest>=8.0", "pytest-cov>=5.0", "ruff>=0.6"]
 acdm-validate = "acdm_validator.cli.main:main"
 
 [project.urls]
-Homepage = "https://github.com/ravikiranpagidi/acdm-validator"
-Issues = "https://github.com/ravikiranpagidi/acdm-validator/issues"
+Homepage = "https://github.com/GreatDataLabs/acdm-validator"
+Issues = "https://github.com/GreatDataLabs/acdm-validator/issues"
+Documentation = "https://greatdatalabs.github.io/acdm/"
+"White Paper" = "https://greatdatalabs.github.io/assets/acdm/acdm-white-paper-final.pdf"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/acdm_validator"]
